@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
+  selectElement:any;
+
   constructor() { }
 
   ngOnInit() {
   }
+
+  // function to select elments
+  openNav(){
+    document.getElementById("sidebar_aside").style.right="0";
+  }
+  closeNav(){
+    document.getElementById("sidebar_aside").style.right="-26rem"
+  }
+
 
 }

@@ -1,28 +1,125 @@
-<div class="bg">
-  <nav>
-    <header id="header">
-      <div class="logo">
-        <h2>Leskeylevy</h2>
+<header>
+  <div class="container">
+    <nav>
+      <div class="nav-brand">
+        <a href="#home" style="color: cyan;">
+          <h3>leskeylevy</h3>
+        </a>
       </div>
-    <div class="row">
-      <ul class="main-nav">
-        <li class="active"><a>Home</a></li>
-        <li><a>About Me</a></li>
-        <li><a>Skills</a></li>
-        <li><a>Projects</a></li>
-        <li><a>Contacts</a></li>
+      <div class="menu-icons open" (click)="openNav()" style="color: cyan;">
+        <i class="fas fa-bars"></i>
+      </div>
+
+      <ul class="nav-list" id="sidebar_aside">
+        <div class="menu-icons close" (click)="closeNav()">
+          <i class="fas fa-times-circle"></i>
+        </div>
+        <li class="nav-item">
+          <a href="#" class="nav-link current">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Project</a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">Contact</a>
+        </li>
       </ul>
-    </div>
+    </nav>
+  </div>
+</header>
 
-    <div class="hero">
-      <h1>Meticulous begins with me....</h1>
-    </div>
-  </header>
-  </nav>
-
-  <section id="about">
+<main>
+  <section class="hero">
     <div class="container">
-      <h3>About me</h3>
+      <div class="main-message">
+        <h2>Hello there..</h2>
+        <div class="cta">
+          <a href="#" class="btn">About me!</a>
+        </div>
+      </div>
     </div>
   </section>
-</div>
+
+  <section class="experience">
+    <div class="container">
+      <div class="title-heading">
+        <h3>Experience</h3>
+        <h1>The thrilling life of me</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="activities-grid">
+        <!-- grid item#1 -->
+        <div class="activities-grid-item star-gazing">
+          <i class="fas fa-star"></i>
+          <h1>Star Gazing</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam adipisci deleniti facere voluptatem dicta sint commodi, expedita velit molestiae inventore repellat necessitatibus asperiores ullam quaerat aut sit sapiente laborum voluptas!</p>
+        </div>
+        <!-- grid item#2 -->
+        <div class="activities-grid-item hiking">
+          <i class="far fa-compass"></i>
+          <h1>Hiking</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci ipsam ipsa a? Magnam odit molestiae fugiat! Ipsum, voluptates magnam tempora laborum dicta nisi atque itaque adipisci repudiandae quibusdam velit veniam!</p>
+        </div>
+        <!-- grid item#3 -->
+        <div class="activities-grid-item camping">
+          <i class="fas fa-fire"></i>
+          <h1>Camping</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex incidunt, eius repellat voluptatem corporis nesciunt rem, eaque voluptates totam, cumque cupiditate magnam iure illo assumenda nostrum unde ipsam non ipsa!</p>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container">
+      <div class="testimonial">
+        <div class="testimonial-text-box">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet cumque excepturi earum! Sequi</p>
+          <i class="icon-ion-md-quote"></i>
+        </div>
+        <div class="testimonial-customer">
+          <img src="../../assets/images/profile-pic.jpg" alt="" srcset="">
+          <h1>Marto Marto</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="begin-adventure">
+    <div class="container">
+      <div class="title-heading">
+        <h3>Let the</h3>
+        <h1>Adventure begin</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="adventure-grid">
+        <!--adventure grid item #1 -->
+        <div class="adventure-grid-item">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut commodi expedita excepturi non magnam veritatis tenetur exercitationem ex. Dolores ad numquam neque quos aspernatur vel esse dicta, impedit commodi reiciendis.
+          </p>
+        </div>
+        <!--adventure grid item #2 -->
+        <div class="adventure-grid-item">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut commodi expedita excepturi non magnam veritatis tenetur exercitationem ex. Dolores ad numquam neque quos aspernatur vel esse dicta, impedit commodi reiciendis.
+          </p>
+        </div>
+      </div>
+      <a class="btn" href="#">Book your adventure</a>
+    </div>
+  </section>
+</main>
+<footer>
+  <p>&copy; 2020 leskeylevy. All rights reserved</p>
+</footer>
+
